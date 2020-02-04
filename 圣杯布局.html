@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 100%;
+        height: 100px;
+      }
+      #container div {
+        height: 100px;
+      }
+      .column {
+        float: left;
+      }
+      #center_div {
+        background-color: pink;
+        width: 100%;
+      }
+      #left_div {
+        background-color: skyblue;
+        width: 300px;
+        margin-left: -100%;
+      }
+      #right_div {
+        background-color: orange;
+        width: 300px;
+        margin-left: -300px;
+      }
+      .mainBox {
+        margin: 0 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 圣杯布局 -->
+    <!-- 在mian里面再加一个盒子  并设置外边距 -->
+    <div id="container">
+      <div id="center_div" class="column">
+        <div class="mainBox">主要内容</div>
+      </div>
+      <div id="left_div" class="column"></div>
+      <div id="right_div" class="column"></div>
+    </div>
+  </body>
+</html>

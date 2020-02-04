@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>先写html再写css</title>
+    <style>
+      html,
+      body,
+      .wrap {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        margin: 0;
+      }
+      .wrap {
+        position: relative;
+      }
+      .left {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        /* height: 100%; */
+        background-color: chartreuse;
+      }
+      .middle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 200px;
+        right: 200px;
+        background-color: rgb(236, 123, 37);
+      }
+      .right {
+        width: 200px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-color: rgb(44, 177, 225);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left"></div>
+      <div class="middle"></div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>
